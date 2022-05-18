@@ -6,8 +6,8 @@ import App from "./App";
 
 ReactDOM.createRoot(document.querySelector("#root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
