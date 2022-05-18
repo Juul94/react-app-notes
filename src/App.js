@@ -23,8 +23,8 @@ function App() {
       <Routes>
         <Route
           // FOR GB PAGES
-          path="/"
-          // path="/react-app-notes"
+          // path="/"
+          path="/react-app-notes"
           element={<Login_view title="Login" setProfileData={setProfileData} />}
         />
         <Route
