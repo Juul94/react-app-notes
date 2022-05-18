@@ -45,7 +45,7 @@ export default function Navigation(props) {
     sessionStorage.removeItem("Auth Token");
     setProfileData(null);
     // navigate("/"); // FOR LOCALHOST
-    navigate("/react-app-notes"); // FOR GP PAGES
+    navigate("/react-app-notes"); // FOR GH PAGES
   };
 
   return (
