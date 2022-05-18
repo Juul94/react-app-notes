@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/react-app-notes/static/css/main.98d4b093.css",
-    "main.js": "/react-app-notes/static/js/main.8a51fdd2.js",
+    "main.css": "/react-app-notes/static/css/main.0c68c718.css",
+    "main.js": "/react-app-notes/static/js/main.2747db65.js",
+    "static/media/PageNotFound.jpg": "/react-app-notes/static/media/PageNotFound.ce293654fc5b055593cf.jpg",
     "static/media/heading.otf": "/react-app-notes/static/media/heading.0094146a0505298ed06a.otf",
     "static/media/body.otf": "/react-app-notes/static/media/body.cc7ab55d27205bd64001.otf",
     "index.html": "/react-app-notes/index.html",
-    "main.98d4b093.css.map": "/react-app-notes/static/css/main.98d4b093.css.map",
-    "main.8a51fdd2.js.map": "/react-app-notes/static/js/main.8a51fdd2.js.map"
+    "main.0c68c718.css.map": "/react-app-notes/static/css/main.0c68c718.css.map",
+    "main.2747db65.js.map": "/react-app-notes/static/js/main.2747db65.js.map"
   },
   "entrypoints": [
-    "static/css/main.98d4b093.css",
-    "static/js/main.8a51fdd2.js"
+    "static/css/main.0c68c718.css",
+    "static/js/main.2747db65.js"
   ]
 }
