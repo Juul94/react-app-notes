@@ -9,8 +9,6 @@ import { doc, updateDoc, getDoc } from "firebase/firestore";
 
 export default function EditNote() {
   const navigate = useNavigate();
-
-  const { title, description, important } = data;
   const noteID = queryString.parse(window.location.search);
 
   useEffect(() => {
@@ -25,8 +23,9 @@ export default function EditNote() {
     important: false,
   });
 
+  const { title, description, important } = data;
+
   function getSpecificNote() {
-    console.log(noteID.id);
     getDoc(noteDocRef(noteID.id))
       .then((response) => {
         let note = response.data();

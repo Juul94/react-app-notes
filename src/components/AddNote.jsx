@@ -31,15 +31,11 @@ export default function AddNote() {
 
   /*** DATA FOR INSERT ***/
 
-  let date = new Date();
-
   const [data, setData] = useState({
     title: "",
     title: "",
     description: "",
-    createdAt:
-      // date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear(),
-      moment().format("MMMM Do YYYY, h:mm:ss a"),
+    createdAt: moment().format("MMMM Do YYYY, h:mm:ss a"),
     important: false,
   });
 

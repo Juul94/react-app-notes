@@ -175,6 +175,8 @@
 
 textarea.form-control {
   resize: none !important;
+  white-space: pre-line !important;
+  line-break: anywhere !important;
 }
 
 .addNote .alert.alert-danger {
