@@ -231,9 +231,6 @@ export default function Register_view({ title, setProfileData }) {
 
           <div className="text-center">
             <p>
-              {/* FOR LOCALHOST */}
-              {/* Already a member? <Link to="/">Login</Link> */}{" "}
-              {/* FOR GH PAGES */}
               Already a member? <Link to="/react-app-notes">Login</Link>
             </p>
           </div>

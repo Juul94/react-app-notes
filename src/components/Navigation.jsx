@@ -33,8 +33,7 @@ export default function Navigation(props) {
     });
 
     if (!authToken) {
-      // navigate("/"); // FOR LOCALHOST
-      navigate("/react-app-notes"); // FOR GP PAGES
+      navigate("/react-app-notes");
     }
   }, []);
 
@@ -44,8 +43,7 @@ export default function Navigation(props) {
     signOut(authentication);
     sessionStorage.removeItem("Auth Token");
     setProfileData(null);
-    // navigate("/"); // FOR LOCALHOST
-    navigate("/react-app-notes"); // FOR GH PAGES
+    navigate("/react-app-notes");
   };
 
   return (
