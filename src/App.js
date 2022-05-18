@@ -22,9 +22,8 @@ function App() {
     <main>
       <Routes>
         <Route
-          // FOR GB PAGES
-          // path="/"
-          path="/react-app-notes"
+          // path="/" // FOR LOCALHOST
+          path="/react-app-notes" // FOR GP PAGES
           element={<Login_view title="Login" setProfileData={setProfileData} />}
         />
         <Route
