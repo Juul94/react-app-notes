@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Navigation from "../../components/Navigation";
 import EditNote from "../../components/EditNote";
 
-export default function Home_view() {
+export default function EditNote_view() {
   const [showNav, setShowNav] = useState(false);
 
   /*** NAVIGATION TOGGLES ***/

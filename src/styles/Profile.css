@@ -292,3 +292,12 @@
     overflow-x: hidden;
   }
 }
+
+#userInfo {
+  font-size: 15px;
+}
+
+#userInfo .fa-solid.fa-user,
+#userInfo .fa-solid.fa-envelope {
+  margin-right: 7.5px;
+}

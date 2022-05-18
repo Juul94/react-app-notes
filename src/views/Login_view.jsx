@@ -53,7 +53,7 @@ export default function Login_view({ title, setProfileData }) {
           "Auth Token",
           response._tokenResponse.refreshToken
         );
-        navigate("/home");
+        navigate("/notes");
       })
       .catch((error) => {
         console.log(error);

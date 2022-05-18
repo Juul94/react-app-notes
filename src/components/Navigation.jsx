@@ -9,14 +9,20 @@ export default function Navigation(props) {
   const [profileData, setProfileData] = useState("");
   const navigate = useNavigate();
 
+  /*** GET USER DATA ***/
+
+  useEffect(() => {
+    authentication.onAuthStateChanged(function (user) {
+      setProfileData(user);
+    });
+  }, []);
+
   /*** CHECKING URL AND ADD CLASS ***/
 
   useEffect(() => {
     const url = window.location.pathname;
 
-    if (url === "/home") {
-      setActiveMenu("home");
-    } else if (url === "/notes") {
+    if (url === "/notes") {
       setActiveMenu("notes");
     } else if (url === "/addnote") {
       setActiveMenu("addnote");
@@ -53,10 +59,7 @@ export default function Navigation(props) {
           <h2>NOTES</h2>
         </div>
         <ul className="sidebar-nav">
-          <Link to="/home" className={activeMenu === "home" ? "active" : ""}>
-            <i className="fa-solid fa-house"></i>Home
-          </Link>
-          <Link className={activeMenu === "notes" ? "active" : ""} to="/notes">
+          <Link to="/notes" className={activeMenu === "notes" ? "active" : ""}>
             <i className="fa-solid fa-note-sticky"></i>View notes
           </Link>
           <Link
@@ -78,6 +81,16 @@ export default function Navigation(props) {
               <button className="navbar-brand" onClick={props.toggleNavbar}>
                 <i className="fa fa-bars"></i>
               </button>
+            </div>
+            <div className="d-inline text-right" id="userInfo">
+              <div className="d-block">
+                <i className="fa-solid fa-user"></i>
+                {profileData.displayName}
+              </div>
+              <div className="d-block">
+                <i className="fa-solid fa-envelope"></i>
+                {profileData.email}
+              </div>
             </div>
           </div>
         </nav>

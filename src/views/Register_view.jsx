@@ -105,7 +105,7 @@ export default function Register_view({ title, setProfileData }) {
               "Auth Token",
               response._tokenResponse.refreshToken
             );
-            navigate("/home");
+            navigate("/notes");
           })
           .catch((error) => {
             console.log(error);

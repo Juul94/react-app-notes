@@ -10,7 +10,6 @@ import { Route, Routes } from "react-router-dom";
 import Login_view from "./views/Login_view";
 import Register_view from "./views/Register_view";
 
-import Home_view from "./views/profile/Home_view";
 import Notes_view from "./views/profile/ListNotes_view";
 import AddNote_view from "./views/profile/AddNote_view";
 import EditNote_view from "./views/profile/EditNote_view";
@@ -34,7 +33,6 @@ function App() {
           }
           exact
         />
-        <Route path="/home" element={<Home_view />} exact />
         <Route path="/notes" element={<Notes_view />} exact />
         <Route path="/addnote" element={<AddNote_view />} exact />
         <Route path="/editnote" element={<EditNote_view />} exact />
