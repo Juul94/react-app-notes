@@ -1,0 +1,256 @@
+.note {
+  width: 300px;
+  background-color: var(--main);
+  padding: 20px;
+  margin: 20px;
+  display: inline-block;
+  position: relative;
+  border-radius: 5px;
+  color: white;
+  vertical-align: top;
+}
+
+.note--title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.note--description {
+  margin-bottom: 25px;
+}
+
+.note--date {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.fa-solid.fa-star,
+.fa-regular.fa-star {
+  width: 20px;
+  position: absolute;
+  top: 7.5px;
+  right: 10px;
+  font-size: 20px;
+  padding: 0;
+  color: yellow;
+  transition: 0.3s all;
+}
+
+/* .fa-solid.fa-star:hover,
+.fa-regular.fa-star:hover {
+  cursor: pointer;
+  transition: 0.3s all;
+  color: yellowgreen;
+} */
+
+.edit {
+  width: 20px;
+  position: absolute;
+  bottom: 17px;
+  right: 40px;
+  border: none;
+  background-color: transparent;
+}
+
+.fa-solid.fa-pen-to-square {
+  width: 20px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  transition: 0.3s all;
+  padding: 0;
+}
+
+.fa-solid.fa-pen-to-square:hover {
+  color: rgba(0, 0, 0, 0.75);
+  transition: 0.3s all;
+}
+
+.delete {
+  width: 20px;
+  position: absolute;
+  bottom: 17px;
+  right: 10px;
+  border: none;
+  background: transparent;
+}
+
+.fa-solid.fa-trash {
+  width: 20px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  transition: 0.3s all;
+  padding: 0;
+}
+
+.fa-solid.fa-trash:hover {
+  color: rgba(0, 0, 0, 0.75);
+  transition: 0.3s all;
+}
+
+.dropdown {
+  margin-left: 20px;
+}
+
+.btn.btn-secondary.dropdown-toggle {
+  width: 200px;
+  background-color: var(--main);
+}
+
+.btn.btn-secondary.dropdown-toggle:hover,
+.btn.btn-secondary.dropdown-toggle:active,
+.btn.btn-secondary.dropdown-toggle:focus {
+  background-color: var(--hover);
+}
+
+.dropdown-menu.show {
+  width: 200px;
+}
+
+.dropdown-item:focus,
+.dropdown-item:active {
+  background-color: var(--main);
+}
+
+.activeDrop {
+  background-color: var(--main);
+  color: white;
+}
+
+.activeDrop:hover {
+  background-color: var(--hover);
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+  #content-wrapper {
+    padding: 10px !important;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .note {
+    display: block !important;
+    margin: 20px auto !important;
+  }
+
+  .note:first-of-type {
+    margin-top: -10px !important;
+  }
+
+  .dropdown {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  #importantDiv {
+    margin: 15px 0 40px 0 !important;
+    display: block !important;
+  }
+  #importantDiv.form-check {
+    padding-left: 0 !important;
+  }
+
+  #importantDiv .form-check-input {
+    margin: 5px 10px 0 0 !important;
+  }
+}
+
+.addNote {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.form-group:first-child {
+  margin-top: 25px;
+}
+
+.form-group {
+  margin-top: 10px;
+}
+
+.form-group label {
+  margin: 7.5px 0;
+}
+
+textarea.form-control {
+  resize: none !important;
+}
+
+.addNote .alert.alert-danger {
+  margin-top: 20px;
+}
+
+.addNote .fa-solid.fa-circle-exclamation {
+  color: #842029;
+  font-size: 17px;
+  margin-right: -2.5px;
+}
+
+.alert {
+  text-align: center;
+}
+
+.hideDiv {
+  display: none;
+}
+
+.editNote {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.editNote .alert.alert-danger {
+  margin-top: 20px;
+}
+
+.editNote .fa-solid.fa-circle-exclamation {
+  color: #842029;
+  font-size: 17px;
+  margin-right: -2.5px;
+}
+
+.form-check .form-check-input {
+  float: none !important;
+  display: inline-block !important;
+  margin: 7.5px 7.5px 0 0 !important;
+}
+
+#importantDiv {
+  margin: 0 10px 0 20px !important;
+}
+
+#importantDiv.form-check .form-check-input {
+  margin: 8px 8.5px 10px 0 !important;
+}
+
+.form-check {
+  padding-left: 0 !important;
+}
+
+input[type="checkbox"]:hover {
+  cursor: pointer;
+  border-color: var(--hover);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(237, 173, 36, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(237, 173, 36, 0.6);
+}
+
+.form-check .form-check-input {
+  margin: 5px 7.5px 10px 0 !important;
+}
+
+.form-check-input:checked {
+  background-color: var(--main);
+  border-color: var(--main);
+}
+
+.form-check-input:active {
+  border-color: var(--main);
+}
+
+.form-check-input:focus {
+  box-shadow: var(--hover);
+  border-color: var(--main);
+}

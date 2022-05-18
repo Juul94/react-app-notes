@@ -1,0 +1,9 @@
+@font-face {
+  font-family: font_heading;
+  src: url(../font/heading.otf);
+}
+
+@font-face {
+  font-family: font_body;
+  src: url(../font/body.otf);
+}
