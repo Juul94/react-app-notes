@@ -23,42 +23,21 @@ function App() {
       <Routes>
         <Route
           // FOR GB PAGES
-          // path="/"
-          path="/react-app-notes"
+          path="/"
+          // path="/react-app-notes"
           element={<Login_view title="Login" setProfileData={setProfileData} />}
         />
         <Route
-          // path="/register"
-          path="/react-app-notes/register"
+          path="/register"
           element={
             <Register_view title="Register" setProfileData={setProfileData} />
           }
           exact
         />
-        <Route
-          // path="/home"
-          path="react-app-notes/home"
-          element={<Home_view />}
-          exact
-        />
-        <Route
-          //  path="/notes"
-          path="react-app-notes/notes"
-          element={<Notes_view />}
-          exact
-        />
-        <Route
-          // path="/addnote"
-          path="react-app-notes/addnote"
-          element={<AddNote_view />}
-          exact
-        />
-        <Route
-          // path="/editnote"
-          path="react-app-notes/editnote"
-          element={<EditNote_view />}
-          exact
-        />
+        <Route path="/home" element={<Home_view />} exact />
+        <Route path="/notes" element={<Notes_view />} exact />
+        <Route path="/addnote" element={<AddNote_view />} exact />
+        <Route path="/editnote" element={<EditNote_view />} exact />
       </Routes>
     </main>
   );
