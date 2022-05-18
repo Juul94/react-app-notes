@@ -67,7 +67,7 @@ export default function Navigation(props) {
           >
             <i className="fa-solid fa-plus"></i>Add note
           </Link>
-          <Link to="/" onClick={handleLogout}>
+          <Link to="/react-app-notes" onClick={handleLogout}>
             <i className="fa-solid fa-right-from-bracket"></i>Sign out
           </Link>
         </ul>
